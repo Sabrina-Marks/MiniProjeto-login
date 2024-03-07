@@ -8,34 +8,41 @@
 </head>
 <body>
     <form id="form">
-
         <h1>Faça seu cadastro de login</h1>
-
-        <label for="pet">Nome do Animal:</label>
-        <input type="text" class="pet"> <br>
-
-        <br><label for="species">Espécie:</label>
-        <input type="text" class="species"><br>
-
-        <br><label for="size">Tamanho do Animal:</label>
-        <input type="text" class="size"><br>
-
-        <br><label for="age">Idade do Animal:</label>
-        <input type="text" class="age"> <br>
-
-        <br><label for="name">Nome do dono:</label>
-        <input type="text" class="name"><br>
-
-        <br><label for="email">E-mail:</label>
-        <input type="email" class="email"> <br>
-
-        <br><label for="number">Contato:</label>
-        <input type="text" class="number"> <br>
-
-        <br><label for="password">Senha:</label>
-        <input type="password" class="password"><br>
-
-        <br><button>Enviar Cadastro</button>
+        <div>
+            <label>Nome do Animal:</label>
+            <input type="text" class="input name" id="name" required ="[a-z\s]+$" title="Apenas letras entre a-z">
+        </div>
+        <div>
+            <label>Espécie:</label>
+            <input type="text" class="input Especie" id="especie" required pattern="[a-z\s]+$" title="Apenas letras entre a-z">
+        </div>
+        <div>
+            <label>Tamanho do Animal:</label>
+            <input type="text" class="input tamanho" id="tamanhoAnimal" required pattern="[0-9]+$" title="Apenas números">
+        </div>
+        <div>
+            <label>Idade do Animal:</label>
+            <input type="number" class="input idade" id="idadeAnimal">
+        </div> 
+       <div>
+        <label>Nome do dono:</label>
+        <input type="text" class="input nomeDono" id="nomeDono" pattern="[a-z\s]+$" title="apenas letras entre a-z">
+       </div>
+        <div>
+            <label>E-mail:</label>
+            <input type="email" class="input email" id="email" required>
+        </div>
+        <div>
+            <label>Contato:</label>
+            <input type="text" class="input contato" id="contato" required pattern="[0-9]+$">
+        </div>
+        <div>
+            <label>Senha:</label>
+            <input type="password" class="input senha" id="senha">
+        </div>
+        <br><button type="button" onclick="redirecionar()">Enviar Cadastro</button>
     </form>
+<script src="script/script.js"></script>
 </body>
 </html>
