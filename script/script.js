@@ -23,5 +23,5 @@ class Cadastros{
 function redirecionar(){
     const dados = new Cadastros(name.value, especie.value, tamanhoAnimal.value, idadeAnimal.value, nomeDono.value, email.value, contato.value, senha.value)
     localStorage.setItem("cadastro", JSON.stringify(dados))
-    window.location.href = "./entry.html"
+    window.location.href = "./pag.html"
 }
