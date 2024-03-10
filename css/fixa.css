@@ -22,5 +22,18 @@ form{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-    }
+}
+
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 50%;
+    height: 25px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
 
