@@ -1,7 +1,12 @@
 const editar = document.getElementById("editar")
 const valoresCadastrados =  JSON.parse(localStorage.getItem("cadastro"))
 
+function editarInfo(){
+    const dados = new Cadastros(name.value, especie.value, tamanhoAnimal.value, idadeAnimal.value, nomeDono.value, email.value, contato.value, senha.value)
 
+localStorage.setItem("cadastro", JSON.stringify(dados))
+window.location.href='./hallo.html'
+}
 
 editar.innerHTML = ` <h2>Editar Informações </h2>
 <div>
@@ -36,6 +41,8 @@ editar.innerHTML = ` <h2>Editar Informações </h2>
 <label>Senha:</label>
 <input value="${valoresCadastrados.senha}" type="password" class="input senha" id="senha">
 </div>
-<button type="button"  onclick="editar()" >Enviar novas Informaçoes</button>`
+<a href="hallo.html">Editar Informaçoes</a> <br>`
+console.log(valoresCadastrados)
+
 
 

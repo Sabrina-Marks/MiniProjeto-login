@@ -4,7 +4,6 @@ function login(){
     console.log(email, senha)
     
     const cadastro = JSON.parse(localStorage.getItem("cadastro"))
-    console.log(cadastro) 
     if(cadastro === null){
         document.getElementById("mensagem").innerText = `Cadastre-se primeiro`
     }else if(email.value === cadastro.email && senha.value === cadastro.senha){

@@ -10,5 +10,4 @@ dados.innerHTML = `
 <h3> Nome do Dono:${cadastro.nomeDono}</h3>
 <h3> E-mail:${cadastro.email}</h3>
 <h3> Contato:${cadastro.contato}</h3>
-<h3> Senha:${cadastro.senha}</h3>
-<a href="cas.html">Editar Informaçoes</a> <br>`
+<h3> Senha:${cadastro.senha}</h3>`
