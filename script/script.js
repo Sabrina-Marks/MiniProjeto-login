@@ -1,4 +1,4 @@
-const name = document.getElementById("name")
+const nome = document.getElementById("name")
 const especie = document.getElementById("especie")
 const tamanhoAnimal = document.getElementById("tamanhoAnimal")
 const idadeAnimal = document.getElementById("idadeAnimal")
@@ -21,7 +21,7 @@ class Cadastros{
 }
 
 function redirecionar(){
-    const dados = new Cadastros(name.value, especie.value, tamanhoAnimal.value, idadeAnimal.value, nomeDono.value, email.value, contato.value, senha.value)
+    const dados = new Cadastros(nome.value, especie.value, tamanhoAnimal.value, idadeAnimal.value, nomeDono.value, email.value, contato.value, senha.value)
     localStorage.setItem("cadastro", JSON.stringify(dados))
-    window.location.href = "./pag.html"
+    window.location.href = "../html/pag.html"
 }
