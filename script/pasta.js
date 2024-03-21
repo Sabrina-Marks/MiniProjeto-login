@@ -7,7 +7,7 @@ function login(){
     if(cadastro === null){
         document.getElementById("mensagem").innerText = `Cadastre-se primeiro`
     }else if(email.value === cadastro.email && senha.value === cadastro.senha){
-        window.location.href = "../html/pag.html"
+        window.location.href = "../html/detailsUser.html"
     }else{
         document.getElementById("mensagem").innerText = `Senha ou e-mail invalidos`
     }

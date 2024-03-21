@@ -15,7 +15,7 @@ class Cadastros{
 }
 
 function redirecionar(){
-    window.location.href = '../html/hallo.html'
+    window.location.href = '../html/dataRegistered.html'
 }
 
 function editarInfo() {

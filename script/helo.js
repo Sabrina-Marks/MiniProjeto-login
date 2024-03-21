@@ -11,4 +11,4 @@ dados.innerHTML = `
 <h3> E-mail:${cadastro.email}</h3>
 <h3> Contato:${cadastro.contato}</h3>
 <h3> Senha:${cadastro.senha}</h3>
-<a href="../html/cas.html">Editar Informaçoes</a> <br>`
+<a href="../html/toRegister.html">Editar Informaçoes</a> <br>`
